@@ -16,7 +16,7 @@ ChiroEcho uses a shared EfficientNet-B3 acoustic encoder with two linear heads â
 
 ## Status
 
-- [x] Paper submitted (CV4Ecology workshop, ECCV 2026)
+- [x] Paper accepted (CV4Ecology workshop, ECCV 2026)
 - [ ] Training code
 - [ ] Inference / geographic resolution code
 - [ ] Pretrained model weights
