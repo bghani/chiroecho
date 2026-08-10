@@ -8,7 +8,7 @@ Trained on 35 European bat species from [ChirosetEurope](https://doi.org/10.5281
 
 This reframes geographic information as a means of *extending* a classifier's effective taxonomy, rather than merely constraining predictions within a fixed one.
 
-**This repository is currently a placeholder.** Training and inference code will be added here as the paper moves through review. In the meantime, this page describes the method and provides the citation for the associated workshop paper.
+**This repository is currently a placeholder.** Training and inference code will be added here in due time. In the meantime, this page describes the method and provides the citation for the associated workshop paper.
 
 ## Method overview
 
