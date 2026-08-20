@@ -12,12 +12,12 @@ This reframes geographic information as a means of *extending* a classifier's ef
 
 ## Method overview
 
-ChiroEcho uses a shared EfficientNet-B3 acoustic encoder with two linear heads — species (35 classes) and genus (11 classes) — trained jointly with a multi-label binary cross-entropy objective. At inference, a lightweight rule-based post-processing step (`GeoResolveSpecies`) combines high-confidence genus predictions with a region–genus lookup table: when a genus has exactly one representative species in the recording's region, the genus prediction is resolved to that species, overriding the species head. This mechanism requires no additional training and can recover species entirely absent from the learned taxonomy, provided their genus is acoustically resolvable and they are the sole regional representative of that genus.
+ChiroEcho uses a shared EfficientNet-B3 acoustic encoder with two linear heads — species (35 classes) and genus (11 classes) — trained jointly with a multi-label binary cross-entropy objective. The encoder can be initialized from ImageNet or from [Perch v2](https://www.kaggle.com/models/google/bird-vocalization-classifier) — a bioacoustic foundation model trained on birdsong. Since Perch v2's official releases are inference-only, we built [`perchv2-pytorch`](https://github.com/bghani/perchv2-pytorch), a PyTorch conversion of its backbone enabling deep fine-tuning; it was developed for this work and is documented separately. At inference, a lightweight rule-based post-processing step (`GeoResolveSpecies`) combines high-confidence genus predictions with a region–genus lookup table: when a genus has exactly one representative species in the recording's region, the genus prediction is resolved to that species, overriding the species head. This mechanism requires no additional training and can recover species entirely absent from the learned taxonomy, provided their genus is acoustically resolvable and they are the sole regional representative of that genus.
 
 ## Status
 
 - [x] Paper accepted (CV4Ecology workshop, ECCV 2026)
-- [ ] Training code
+- [ ] Training code — the Perch v2 PyTorch backbone used here is available now at [`perchv2-pytorch`](https://github.com/bghani/perchv2-pytorch); the ChiroEcho-specific dual-head training code (species + genus, geographic resolution) is still to come
 - [ ] Inference / geographic resolution code
 - [ ] Pretrained model weights
 
