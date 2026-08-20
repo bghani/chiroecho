@@ -42,8 +42,8 @@ If you use ChiroEcho or refer to this work, please cite:
 ## Related resources
 
 - **Dataset**: [ChirosetEurope](https://doi.org/10.5281/zenodo.20773226) — a curated bioacoustics dataset of European bat vocalisations
-- **Affiliation**: [Naturalis Biodiversity Center](https://www.naturalis.nl/)
 - **Perch v2 PyTorch backbone**: [`perchv2-pytorch`](https://github.com/bghani/perchv2-pytorch) — unofficial PyTorch implementation of Perch v2
+- **Affiliation**: [Naturalis Biodiversity Center](https://www.naturalis.nl/)
 
 ## About
 
