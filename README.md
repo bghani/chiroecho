@@ -28,7 +28,8 @@ If you use ChiroEcho or refer to this work, please cite:
 ```bibtex
 @misc{ghani2026chiroechoextendingautomatedbat,
       title={ChiroEcho: extending automated bat vocalisation classification beyond the learned taxonomy}, 
-      author={Burooj Ghani and Welmoed Eversteijn and Milan van Hirtum and Juan Sebastián Cañas and Vincent J. Kalkman and Dan Stowell and A. Leonie Baier},
+      author={Burooj Ghani and Welmoed Eversteijn and Milan van Hirtum and Juan Sebastián Cañas    
+      and Vincent J. Kalkman and Dan Stowell and A. Leonie Baier},
       year={2026},
       eprint={2608.18191},
       archivePrefix={arXiv},
